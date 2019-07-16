@@ -9,13 +9,13 @@ describe "add" do
     expect(add(2,2)).to eq(4)
   end
 
-  it "adds positive numbers" do
+  it "adds positive numbers 2 and 6" do
     expect(add(2,6)).to eq(8)
   end
 end
 
 describe "subtract" do
-  it "subtracts numbers" do
+  it "subtracts 10 and 4" do
     expect(subtract(10,4)).to eq(6)
   end
 end
@@ -49,9 +49,13 @@ describe "#multiply" do
 
   it "multiplies two other numbers"
     # one other test here, don't forget do end ;)
+    expect(multiply(5, 5)).to eq(25)
+  end  
 
   it "multiplies two other numbers, one of them being 0"
     # one last test, with 0 in it
+    expect(multiply(0, 2)).to eq(0)
+  end  
 
 end
 
